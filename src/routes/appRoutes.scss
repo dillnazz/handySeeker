@@ -1,0 +1,24 @@
+* {
+	margin: 0auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div {
+	.routes {
+		display: flex;
+		justify-content: space-between;
+    margin: 5px;
+    margin-top: -10px;
+    background-color: white;
+    box-shadow: 0px 6px 14px 0px #0000000A;
+    padding: 5px;
+		.link {
+			text-decoration: none;
+			color: black;
+			font-family: Nunito;
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
+}

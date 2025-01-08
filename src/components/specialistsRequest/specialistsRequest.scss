@@ -1,0 +1,30 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+div {
+	.specialistsRequest {
+		.mainDiv {
+			display: flex;
+			background: linear-gradient(275.89deg, #0074b8 0%, #02b0c5 100%);
+			width: 1352px;
+			height: 425px;
+			border-radius: 14px;
+			.inputDiv {
+				.inputs {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          div {
+            width: 360px;
+            height: 70px;
+            border-radius: 5px ;
+            padding: 30px;
+            border: solid red 2px;
+          }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+.userRegisterPage {
+  width: 100%; /* Ширина 100% */
+  max-width: 1400px; /* Максимальная ширина для удобства */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  .registerHeader {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 32px; /* Увеличен размер шрифта */
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px; /* Чуть больше размер текста */
+      color: #444;
+    }
+  }
+
+  .registerForm {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 12px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .formGroup {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 100%; /* Ширина 100% */
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        box-sizing: border-box;
+
+        &:focus {
+          border-color: #007bff;
+          outline: none;
+        }
+      }
+    }
+
+    .registerButton {
+      width: 100%; /* Кнопка на всю ширину */
+      padding: 14px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background: #0056b3;
+      }
+    }
+  }
+
+  .errorMessage {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .successMessage {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+}

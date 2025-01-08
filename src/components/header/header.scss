@@ -1,0 +1,44 @@
+@import "../../scss/colors.scss";
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+div {
+  .headerPageDiv {
+    background: #FCFCFC;
+    padding-bottom: 10px;
+    .headerPage {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        .logoExperts {
+          display: flex;
+          margin-left: -5px;
+          h2 {
+            text-align: center;
+            padding-top: 20px;
+            color: $darkRed;
+          }
+        }
+
+        .headerLogo {
+          height: 73.11px;
+        }
+        .headerSearch {
+          margin-right: 90px;
+          margin-top: 10px;
+          button {
+            width: 196px;
+            height: 46px;
+            border-radius: 5px;
+            color: white;
+            background-color: $darkRed;
+            border: transparent;
+          }
+        }
+      }
+    }
+  }
+}

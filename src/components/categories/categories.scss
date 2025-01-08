@@ -1,0 +1,59 @@
+@import "../../scss/colors.scss";
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  .categories {
+    .inputs {
+      display: flex;
+      margin-bottom: 80px;
+        ul {
+          list-style: none;
+          background-color: white;
+           max-height: 170px; // Ограничение высоты списка
+          overflow-y: auto; //
+          color: black;
+          width: 380px;
+          cursor: pointer;
+          li {
+            padding: 17px;
+            text-align: start;
+          }
+        }
+    }
+    .categories_item {
+        padding-top: 30px;
+      h1 {
+        width: 700px;
+        padding-top: 95px;
+      }
+    }
+    .searchContainer {
+      input {
+        width: 380px;
+        height: 59px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        border-bottom: 3px solid $darkRed;
+      }
+      .searchButton {
+        background: $darkRed;
+      }
+    }
+      .sectionOption {
+    .options {
+      margin: 10px;
+      .cards {
+        background-color: rgb(255, 252, 252);
+        border-radius: 10px;
+        // margin-top: 50px;
+      }
+    }
+  }
+
+  }
+}

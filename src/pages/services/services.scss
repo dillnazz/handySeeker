@@ -1,0 +1,49 @@
+@import "../../scss/colors.scss";
+* {
+  margin: 0auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+	.sectionOption {
+			h3 {
+				margin: 20px;
+				padding-left: 10px;
+				color: #2e2e2e;
+			}
+			.options {
+				display: flex;
+				flex-wrap: wrap;
+				margin: 30px;
+				.cards {
+					display: flex;
+					border: 1px solid rgb(206, 203, 203);
+					background-color: #f7f7f7;
+					align-items: center;
+					font-weight: 600;
+					width: 344px;
+					padding: 40px;
+					&:hover {
+						background-color: white;
+						// color: #00c6bf;
+						transform: translateY(-5px);
+						box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+						border: transparent;
+						border-radius: 5px;
+					}
+					&:active {
+						transform: translateY(2px);
+						box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+					}
+					.optionsIcon {
+						width: 40px;
+						height: 40px;
+						color: $lightRed;
+						// border: 1px solid black;
+						border-radius: 10px;
+					}
+					p {
+						color: #2e2e2e;
+					}
+				}
+			}
+		}

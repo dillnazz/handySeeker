@@ -1,0 +1,194 @@
+// @import "../../scss/colors.scss";
+// * {
+//   margin: 0 auto;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// .review-container {
+//   display: flex;
+//   padding: 20px;
+//   font-family: Arial, sans-serif;
+//   text-align: center;
+
+//   h2 {
+//     font-size: 40px;
+//     width: 650px;
+//     margin: 20px;
+//     text-align: center;
+//     margin-top: 50px;
+//     color: $darkRed;
+//   }
+
+//   .review-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 10px;
+//     margin-top: 40px;
+//   }
+
+//   .review-card {
+//     border: 1px solid #ddd;
+//     border-radius: 8px;
+//     padding: 30px;
+//     width: 300px;
+//     text-align: left;
+
+//     span {
+//       color: red;
+//       font-size: 20px;
+//     }
+
+//     h3 {
+//       font-size: 18px;
+//       margin: 10px 0;
+//     }
+
+//     p {
+//       font-size: 14px;
+//       color: #555;
+
+//       &.author {
+//         font-weight: bold;
+//         margin-top: 10px;
+//       }
+//     }
+//   }
+// }
+
+
+
+@import "../../scss/colors.scss";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.review-container {
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  .reviewInput {
+    margin-right: 8px;
+    h2 {
+      font-size: 35px;
+      // width: 450px;
+      max-width: 650px;
+      margin: 20px 0;
+      text-align: center;
+      color: $darkRed;
+    }
+    .review-form {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: black;
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: $darkRed;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:hover {
+        // background-color: darken($darkRed, 10%);
+      }
+    }
+  }
+
+  }
+
+  .review-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .review-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 35px;
+    width: 300px;
+    background: #f9f9f9;
+    position: relative;
+    text-align: left;
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    span {
+      color: red;
+      font-size: 20px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s;
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: $darkRed;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+
+      &.author {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+      }
+    }
+  }
+
+
+}

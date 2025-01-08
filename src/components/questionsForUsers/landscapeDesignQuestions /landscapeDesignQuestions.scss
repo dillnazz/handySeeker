@@ -1,0 +1,74 @@
+.landscapeDesignQuestions {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  .progressBar {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .progress {
+      height: 100%;
+      background-color: #007bff;
+      transition: width 0.3s ease-in-out;
+    }
+  }
+
+  .questionContainer {
+    text-align: center;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .optionsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      .optionButton {
+        padding: 15px 20px;
+        font-size: 16px;
+        width: 700px;
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #007bff;
+          color: white;
+        }
+
+        &.selected {
+          background-color: #007bff;
+          color: white;
+          border: 2px solid #0056b3;
+        }
+      }
+    }
+
+    .nextButton {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
