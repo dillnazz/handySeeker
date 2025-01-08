@@ -1,36 +1,5 @@
-// import './ReviewComponent.scss';
-
-// const ReviewComponent = () => {
-//   const reviews = [
-//     { id: 1, title: "Best site I’ve ever been on", text: "Very knowledgeable about any question, and they answer within minutes.", author: "Shirley" },
-//     { id: 2, title: "Great service", text: "I had a complicated question and a real lawyer replied within 2 minutes.", author: "Kristen" },
-//     { id: 3, title: "A valuable asset to my business", text: "The appraisers at JustAnswer are professional, friendly, and very knowledgeable.", author: "Rich" },
-//     { id: 4, title: "Can save you a lot of money and trouble", text: "We were able to fix the problem with little fuss. Definitely worth starting with JustAnswer.", author: "Jennifer" },
-//     { id: 5, title: "I talked to a live person", text: "Got me on the road within a few minutes. I will definitely use this service again.", author: "Robin" },
-//     { id: 6, title: "I talked to a live person", text: "Got me on the road within a few minutes. I will definitely use this service again.", author: "Robin" }
-//   ];
-
-//   return (
-//     <div className="review-container">
-//       <h2>Мы помогаем людям находить проверенных специалистов</h2>
-//       <div className="review-list">
-//         {reviews.map((review) => (
-//           <div key={review.id} className="review-card">
-//             <span>❤️</span>
-//             <h3>{review.title}</h3>
-//             <p>{review.text}</p>
-//             <p className="author">— {review.author}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ReviewComponent;
-
 import { useState } from 'react';
-import './ReviewComponent.scss';
+import './reviewComponent.scss';
 
 const ReviewComponent = () => {
   const [reviews, setReviews] = useState([

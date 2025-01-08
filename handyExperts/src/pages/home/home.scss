@@ -1,0 +1,103 @@
+@import "../../scss/colors.scss";
+.homePage {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.imageContainer {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		.imageBackground {
+			width: 100%;
+			height: 83%;
+			object-fit: cover;
+		}
+
+		.contentOverlay {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 83%;
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		.textContainer {
+			text-align: center;
+			color: white;
+		}
+
+		.textContainer h1 {
+			font-size: 60px;
+			font-family: "Nunito", sans-serif;
+			margin-bottom: 20px;
+		}
+
+		.textContainer button {
+			// background-color: #00c6bf;
+			color: white;
+			padding: 20px 40px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		// .textContainer button:hover {
+		// 	background-color: $lightBlue;
+		// }
+		.sectionOption {
+      margin-top: 40px;
+      margin-bottom: 70px;
+		}
+		.ourSpecialistsComponent {
+			display: flex;
+			.mainSpecialists {
+				background-color: $lightRed;
+        border-radius: 10px;
+				padding: 20px 60px 0px 0px;
+				.specialistBackgroundImg {
+					background: url("https://www.daibau.ng/showfile.php?uuid=06ebfb66eb4d18573e5aa7d0fe78b3ecc80d6fa8");
+					background-size: contain; /* Изображение полностью помещается */
+					background-position: center;
+					width: 660px;
+					height: 550px;
+					.sectionTexts {
+						display: flex;
+						flex-direction: column;
+						// align-items: center;
+						justify-content: center;
+						// padding: 10px;
+						border-radius: 20px;
+						height: 400px;
+						width: 300px;
+						margin-left: 70px;
+						background-color: white;
+						h2 {
+							font-size: 38px;
+							width: 200px;
+							color: rgb(68, 155, 231);
+							border-radius: 20px;
+						}
+						p {
+							width: 200px;
+              padding-top: 10px;
+						}
+					}
+				}
+			}
+		}
+    .reviewComponent {
+      margin: 30px;
+      margin-top: 40px;
+      // margin-bottom: 20px;
+    }
+	}
+}
